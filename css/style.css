@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.3)50%); */
+    background-image: url('1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+:root {
+    /* font-color */
+    --orange: #ff7200;
+    --white: #fff;
+    --black: #000;
+
+    /* backgound-color */
+    --bg-orange: #ff7200;
+    --bg-white: #fff;
+    --bg-black: #000;
+    --bg-secondary: #484848;
+
+    /* font size */
+    --fs-10: 10px;
+    --fs-11: 12px;
+    --fs-25: 35px;
+}
+
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+
+
+.logo a {
+    margin-top: 10px;
+    color: #ff7200;
+    font-size: 30px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 75px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ff7200;
+}
+
+.search {
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.search a:hover {
+    color: orangered;
+}
+
+.srch {
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 28px;
+    background: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.srch {
+    outline: none;
+}
+
+.content {
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+
+}
+
+.content .par {
+    padding-left: 0px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 50px;
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 15px;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    margin-left: 0px;
+    margin-right: 650px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: left;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+
+.cn:hover {
+    background-color: orangered;
+    color: #fff;
+}
+
+.content span {
+    color: #ff7200;
+    font-size: 60px;
+}
+
+.form {
+    width: 250px;
+    height: 300px;
+    /* background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%); */
+    position: absolute;
+    /* position: static; */
+    top: 140px;
+    border: 1px solid orangered;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px 20px;
+}
+
+.form h2 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    background-color: #ff7200;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn {
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.btnn:hover {
+    background-color: orangered;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+
+p.link {
+    font-family: Arial;
+    font-size: 13px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+p .link a {
+    text-decoration: none;
+    color: orangered;
+}
+
+.liw {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* ----------------------------------------------REGISTRATION PAGE ----------------------------------------------------------------*/
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: orangered;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #fff;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ff7200;
+    border-radius: 4px;
+    background: transparent;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #ff7200;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* -------------------------------------------------CONTACT PAGE------------------------------------------- */
+
+
+
+
+.container .contact-form {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    /* background-color: transparent; */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ff7200;
+}
+
+p {
+    text-align: center;
+    color: var(--white);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: var(--white);
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    color: var(--white);
+    font-size: 16px;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    background: var(--bg-black);
+    opacity: 0.5;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #ff7200;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ---------------------------------------------ABOUT US--------------------------------------------------------------- */
+
+
+header {
+    background-color: none;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: #ff7200;
+}
+
+p {
+    line-height: 1.6;
+    color: #fff;
+}
+
+.values {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.value-item {
+    flex: 1 1 calc(50% - 20px);
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h3 {
+    margin-top: 0;
+    color: var(--orange);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+footer p .span {
+    color: orange;
+
+}
+
+/* --------------------------Design--------------------------- */
+.hero{
+    padding: 20px 0px;
+}
+.hero .hero-content p{
+    margin-bottom: 15px;
+}
+.hero .hero-content .btn1 {
+    width: 100px;
+    height: 50px;
+    padding: 10px 20px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-left: 550px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+
+/* .courses .course-list .course .btn1 {
+    width: 70px;
+    height: 40px;
+    padding: 5px 10px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-left: 570px;
+    font: weight 500px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 50px;
+    text-decoration: none;
+} */
+
+.courses .course-list .course h3{
+    color: rgb(232, 52, 52);
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    margin-left: auto;
+    margin-top: 20px;
+}
+.courses .course-list .course p{
+    margin: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.about{
+    padding: 10px 0px;
+}
+.about h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.courses h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.contact h2{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.contact .btn{
+    width: 200px;
+    height: 50px;
+    padding: 15px 20px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-left: 550px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.hero .hero-content .btn2{
+    background: #ff7200;
+    padding: 10px 15px;
+    margin-left: 550px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.services h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+.services h3{
+   color:  rgb(232, 52, 52); 
+}
+
+.portfolio h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+

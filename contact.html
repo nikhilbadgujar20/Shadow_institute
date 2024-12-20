@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadoW</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <h1 class="logo"><a href="index.html">ShadoW</a></h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="design.html">DESIGN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="text" name="" placeholder="type to text">
+            <a href="#"><button class="btn">Search</button></a>
+        </div>
+    </div>
+    <div class="container contact-form">
+        <h1>Web Development Course Enquiry</h1>
+        <p>Have questions about our web development course? Fill out the form below, and we'll get in touch with you shortly.</p>
+        <form action="/submit_enquiry" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="course-interest">Area of Interest</label>
+            <select id="course-interest" name="course_interest" required>
+                <option value="">-- Select an option --</option>
+                <option value="frontend">Frontend Development</option>
+                <option value="backend">Backend Development</option>
+                <option value="fullstack">Full Stack Development</option>
+            </select>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Let us know your questions or requirements"></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+        </form>
+    </div>
+</body>
+</html>
